@@ -6,11 +6,11 @@ import './styles.css';
 
 const icons = {
     cloud: 'cloud',
-    cloudy: 'cloudy',
-    sunny: 'day-sunny',
+    sun: 'day-sunny',
     rain: 'rain',
     snow: 'snow',
-    windy: 'windy'
+    thunder: 'day-thunderstore',
+    drizzle: 'day-showers',
 };
 
 const getWeatherIcon = weatherState => {

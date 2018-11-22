@@ -5,7 +5,7 @@ const LocationList = () => (
     <div>
         <WeatherLocation city='Madrid'></WeatherLocation>
         <WeatherLocation city='Barcelona'></WeatherLocation>
-        <WeatherLocation city='Valencia'></WeatherLocation>
+        <WeatherLocation city='Valencia,ve'></WeatherLocation>
     </div>
 );
 

@@ -18,24 +18,24 @@ class WeatherLocation extends Component {
             city: city,
             data: null
         };
-        console.log('constructor');
+        // console.log('constructor');
     }
 
     componentDidMount() {
-        console.log('componentDidMount');
+        // console.log('componentDidMount');
         this.handleUpdateClick();
     }
 
     componentDidUpdate(prevProps, prevState) {
-        console.log('componentDidUpdate');
+        // console.log('componentDidUpdate');
     }
 
     componentWillMount() {
-        console.log('UNSAFE componentWillMount');
+        // console.log('UNSAFE componentWillMount');
     }
 
     componentWillUpdate(nextProps, nextState) {
-        console.log('UNSAFE componentWillUpdate');
+        // console.log('UNSAFE componentWillUpdate');
     }
 
     handleUpdateClick = () => {
@@ -50,12 +50,13 @@ class WeatherLocation extends Component {
                 });
             })
             .catch((err) => {
-                console.error(err);
+                // console.error(err);
+                alert(err);
             });
     }
 
     render() {
-        console.log('render');
+        // console.log('render');
         return (
             <div className="weatherLocationCont"> 
                 {this.state.city ? <Location city={this.state.city}></Location> : ''}
@@ -63,6 +64,6 @@ class WeatherLocation extends Component {
             </div>
         );
     }
-};
+}
 
 export default WeatherLocation;
