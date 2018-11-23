@@ -42,3 +42,9 @@
 .wicon {
     color: rgb(277, 72, 0);
 }
+
+@media (max-width: 64em) {
+    .temp {
+        font-size: 23px;
+    }
+}

@@ -7,7 +7,7 @@ import Location from './Location';
 import WeatherData from './WeatherData';
 
 import transformWeather from '../../services/transformWeather';
-import getUrlWeather from '../../services/getUrlWeather';
+import {getUrlWeather} from '../../services/getUrlWeather';
 
 import './styles.css';
 
