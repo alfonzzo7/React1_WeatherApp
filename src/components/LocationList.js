@@ -11,11 +11,11 @@ const LocationList = ({cities, onSelectedLocation}) => {
     };
 
     const arrayToComponents = cities => (
-        cities.map((city, index) => {
+        cities.map((city) => {
             return (
                 <WeatherLocation 
                     city={city} 
-                    key={`${city}_${index}`}
+                    key={`${city}`}
                     onWeatherLocationClick={() => handleWeatherLocationClick(city)}>
                 </WeatherLocation>
             )
